@@ -13,6 +13,7 @@ import UIKit
 /// An enum representing image literals used in the app.
 enum ImageLiteral: String {
     case krishna = "Krishna"
+    case backButtonImage = "Back"
     
     // MARK: - Properties
     

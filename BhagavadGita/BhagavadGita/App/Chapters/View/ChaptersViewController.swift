@@ -54,7 +54,6 @@ class ChaptersViewController: UIViewController, LoaderHandling {
     // MARK: - Setup Methods
     
     func setupTableView() {
-        tvChapters.rowHeight = UITableView.automaticDimension
         tvChapters.separatorStyle = .none
         tvChapters.register(UINib(nibName: "ChaptersTableViewCell", bundle: nil),
                             forCellReuseIdentifier: "ChaptersTableViewCell")
@@ -91,7 +90,7 @@ extension ChaptersViewController {
                     self.applyCornerAndShadowToView(view: cell.bgView)
                     guard let chapter = chapter else { return }
                     cell.lblChapterName.text = chapter.nameTranslated
-                    cell.lblVersesCount.text = "\(chapter.versesCount) verses"
+                    cell.lblVersesCount.text = "\(chapter.versesCount) \n verses"
                     cell.selectionStyle = .none
                 }, didSelectedItemAtIndex: { [weak self] selectedIndex in
                     guard self != nil else { return }

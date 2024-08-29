@@ -91,4 +91,16 @@ extension UIViewController {
         attributedString.addAttribute(.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedString.length))
         return attributedString
     }
+    
+    func showBackButton() {
+        let backButn = UIButton.init(frame: CGRect(x:0,y:0,width:25,height:25))
+        backButn.setImage(ImageLiteral.backButtonImage.image, for: UIControl.State.normal)
+        backButn.addTarget(self, action: #selector(backBtnTapped(sender:)), for: .touchUpInside)
+        let backButtonItem = UIBarButtonItem.init(customView: backButn)
+        self.navigationItem.leftBarButtonItems = [backButtonItem]
+    }
+    
+    @objc public func backBtnTapped(sender:UIButton){
+        self.navigationController?.popViewController(animated: true)
+    }
 }
