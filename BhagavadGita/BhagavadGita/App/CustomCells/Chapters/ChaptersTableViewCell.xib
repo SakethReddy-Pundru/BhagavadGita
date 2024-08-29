@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChaptersTableViewCell" rowHeight="100" id="KGk-i7-Jjw" customClass="ChaptersTableViewCell" customModule="BhagavadGita" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d1Q-FU-hbb">
+                        <rect key="frame" x="1" y="8" width="318" height="84"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Krishna" translatesAutoresizingMaskIntoConstraints="NO" id="zAa-Qp-S0x">
+                                <rect key="frame" x="6" y="17" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cd8-eM-4IP"/>
+                                    <constraint firstAttribute="width" secondItem="zAa-Qp-S0x" secondAttribute="height" multiplier="1:1" id="uAE-Le-Yn9"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbo-gR-DB9">
+                                <rect key="frame" x="72" y="6" width="164.33333333333337" height="72"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
+                                <color key="textColor" red="0.52941176469999995" green="0.20784313730000001" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFn-TM-Nnc">
+                                <rect key="frame" x="248.33333333333334" y="6" width="63.666666666666657" height="72"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
+                                <color key="textColor" red="0.52941176469999995" green="0.20784313730000001" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.91764705879999997" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="RFn-TM-Nnc" secondAttribute="bottom" constant="6" id="15C-um-tPS"/>
+                            <constraint firstItem="Cbo-gR-DB9" firstAttribute="leading" secondItem="zAa-Qp-S0x" secondAttribute="trailing" constant="16" id="25P-3d-Chd"/>
+                            <constraint firstItem="Cbo-gR-DB9" firstAttribute="top" secondItem="d1Q-FU-hbb" secondAttribute="top" constant="6" id="3nh-OX-I5B"/>
+                            <constraint firstItem="RFn-TM-Nnc" firstAttribute="width" secondItem="d1Q-FU-hbb" secondAttribute="width" multiplier="0.2" id="B6c-ZL-cre"/>
+                            <constraint firstItem="RFn-TM-Nnc" firstAttribute="leading" secondItem="Cbo-gR-DB9" secondAttribute="trailing" constant="12" id="FvO-9D-vK4"/>
+                            <constraint firstAttribute="trailing" secondItem="RFn-TM-Nnc" secondAttribute="trailing" constant="6" id="IFK-T3-ltg"/>
+                            <constraint firstItem="zAa-Qp-S0x" firstAttribute="leading" secondItem="d1Q-FU-hbb" secondAttribute="leading" constant="6" id="eJY-C6-Nhe"/>
+                            <constraint firstItem="zAa-Qp-S0x" firstAttribute="centerY" secondItem="d1Q-FU-hbb" secondAttribute="centerY" id="hnm-mh-d9r"/>
+                            <constraint firstAttribute="bottom" secondItem="Cbo-gR-DB9" secondAttribute="bottom" constant="6" id="hxN-pS-75d"/>
+                            <constraint firstItem="RFn-TM-Nnc" firstAttribute="top" secondItem="d1Q-FU-hbb" secondAttribute="top" constant="6" id="oBJ-lj-aEp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="d1Q-FU-hbb" secondAttribute="trailing" constant="1" id="NqI-hA-zKc"/>
+                    <constraint firstItem="d1Q-FU-hbb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="cpc-1Q-dnv"/>
+                    <constraint firstAttribute="bottom" secondItem="d1Q-FU-hbb" secondAttribute="bottom" constant="8" id="qlu-q0-yzX"/>
+                    <constraint firstItem="d1Q-FU-hbb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="1" id="skK-bx-ig7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bgView" destination="d1Q-FU-hbb" id="QkX-Qj-gWi"/>
+                <outlet property="imageViewIcon" destination="zAa-Qp-S0x" id="NCS-4Q-Wy7"/>
+                <outlet property="lblChapterName" destination="Cbo-gR-DB9" id="oHm-IZ-gap"/>
+                <outlet property="lblVersesCount" destination="RFn-TM-Nnc" id="Wp4-bh-gFh"/>
+            </connections>
+            <point key="canvasLocation" x="126.71755725190839" y="39.436619718309863"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Krishna" width="360" height="360"/>
+    </resources>
+</document>

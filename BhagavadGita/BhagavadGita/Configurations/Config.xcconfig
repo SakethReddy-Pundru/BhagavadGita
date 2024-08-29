@@ -1,0 +1,15 @@
+//
+//  Config.xcconfig
+//  BhagavadGita
+//
+//  Created by Saketh Reddy on 26/08/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+base_url = https:\/\/bhagavad-gita3.p.rapidapi.com\/v2\/chapters\/
+khost_header = x-rapidapi-host
+vhost_header = bhagavad-gita3.p.rapidapi.com
+kkey_header = x-rapidapi-key
+vkey_header = d00b40a079mshcbce07cdd2e82ebp15e9bbjsn884068a70b3e

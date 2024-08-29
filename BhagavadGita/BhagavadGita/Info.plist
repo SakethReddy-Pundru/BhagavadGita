@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+					<key>UISceneStoryboardFile</key>
+					<string>Main</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<key>baseURL</key>
+	<string>${base_url}</string>
+	<key>bhagavad_gita_scene</key>
+    <array>
+        <string>The Gita is a dialogue between Krishna and Arjuna right before the start of the climactic Kurukshetra War in the Hindu epic Mahabharata. The Bhagavad Gita is the compilation of Arjuna's questions and moral dilemma and Krishna's answers and insights that elaborate on a variety of philosophical concepts.</string>
+        <string>Dhritarastra and Pandu were brothers born in the Kuru dynasty, descending from King Bharata, a former ruler of the earth, from whom the name Mahabharata derives. Because Dhritarastra, the elder brother, was born blind, the throne that otherwise would have been his was passed down to the younger brother, Pandu.</string>
+        <string>When Pandu died at an early age, his five children—Yudhisthira, Bhima, Arjuna, Nakula, and Sahadeva—came under the care of Dhritarastra, who in effect became, for the time being, the king. Thus the sons of Dhritarastra and those of Pandu grew up in the same royal household. Both were trained in the military arts by the expert Drona and counseled by the revered “grandfather” of the clan, Bhisma. Yet the sons of Dhritarastra, especially the eldest, Duryodhana, hated and envied the Pandavas. And the blind and weak-minded Dhritarastra wanted his own sons, not those of Pandu, to inherit the kingdom.</string>
+        <string>Thus Duryodhana, with Dhritarastra’s consent, plotted to kill the young sons of Pandu, and it was only by the careful protection of their uncle Vidura and their cousin Lord Krishna that the Pandavas escaped the many attempts against their lives.</string>
+        <string>Now, Lord Krishna was not an ordinary man but the Supreme Godhead Himself, who had descended to earth and was playing the role of a prince in a contemporary dynasty. In this role, He was also the nephew of Pandu’s wife Kunti, or Pritha, the mother of the Pandavas. So both as a relative and as the eternal upholder of religion, Krishna favored the righteous sons of Pandu and protected them.</string>
+        <string>Ultimately, however, the clever Duryodhana challenged the Pandavas to a gambling match. In the course of that fateful tournament, Duryodhana and his brothers took possession of Draupadi, the chaste and devoted wife of the Pandavas, and insultingly tried to strip her naked before the entire assembly of princes and kings. Krishna's divine intervention saved her, but the gambling, which was rigged, cheated the Pandavas of their kingdom and forced them into thirteen years of exile.</string>
+        <string>Upon returning from exile, the Pandavas rightfully requested their kingdom from Duryodhana, who bluntly refused to yield it. Dutybound as princes to serve in public administration, the five Pandavas reduced their request to a mere five villages. But Duryodhana arrogantly replied that he wouldn’t spare them enough land into which to drive a pin.</string>
+        <string>Throughout all this, the Pandavas had been consistently tolerant and forbearing. But now war seemed inevitable.</string>
+        <string>Nonetheless, as the princes of the world divided, some siding with the sons of Dhritarastra, others with the Pandavas, Krishna Himself took the role of messenger for the sons of Pandu and went to the court of Dhritarastra to plead for peace. When His pleas were refused, war was now certain.</string>
+        <string>The Pandavas, men of the highest moral stature, recognized Krishna to be the Supreme Personality of Godhead, whereas the impious sons of Dhritarastra did not. Yet Krishna offered to enter the war according to the desire of the antagonists. As God, He would not personally fight; but whoever so desired might avail himself of Krishna's army—and the other side could have Krishna Himself, as an advisor and helper. Duryodhana, the political genius, snatched at Krishna's armed forces, while the Pandavas were equally eager to have Krishna Himself.</string>
+        <string>In this way, Krishna became the charioteer of Arjuna, taking it upon Himself to drive the fabled bowman’s chariot. This brings us to the point at which Bhagavad-gita begins…</string>
+    </array>
+	<key>kHostHeader</key>
+	<string>${khost_header}</string>
+	<key>kKeyHeader</key>
+	<string>${kkey_header}</string>
+	<key>vHostHeader</key>
+	<string>${vhost_header}</string>
+	<key>vKeyHeader</key>
+	<string>${vkey_header}</string>
+</dict>
+</plist>

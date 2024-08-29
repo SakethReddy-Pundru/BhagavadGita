@@ -1,0 +1,1024 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		365BA2259DC49FA978A0D95A /* Pods_BhagavadGita_BhagavadGitaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D9BDCDC3BDB1FE0F753BE12 /* Pods_BhagavadGita_BhagavadGitaUITests.framework */; };
+		605A96482C7CB2AD007DA31A /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605A96472C7CB2AD007DA31A /* UIStoryboard.swift */; };
+		60807F6C2C7C6F7B0079B7D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60807F6A2C7C6F7B0079B7D1 /* Main.storyboard */; };
+		60807F6F2C7C6F7B0079B7D1 /* BhagavadGita.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 60807F6D2C7C6F7B0079B7D1 /* BhagavadGita.xcdatamodeld */; };
+		60807F712C7C6F7F0079B7D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60807F702C7C6F7F0079B7D1 /* Assets.xcassets */; };
+		60807F742C7C6F7F0079B7D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60807F722C7C6F7F0079B7D1 /* LaunchScreen.storyboard */; };
+		60807F7F2C7C6F800079B7D1 /* BhagavadGitaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60807F7E2C7C6F800079B7D1 /* BhagavadGitaTests.swift */; };
+		60807F892C7C6F800079B7D1 /* BhagavadGitaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60807F882C7C6F800079B7D1 /* BhagavadGitaUITests.swift */; };
+		60807F8B2C7C6F800079B7D1 /* BhagavadGitaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60807F8A2C7C6F800079B7D1 /* BhagavadGitaUITestsLaunchTests.swift */; };
+		60807F9B2C7C7E4A0079B7D1 /* APIWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60807F9A2C7C7E4A0079B7D1 /* APIWrapper.swift */; };
+		60807F9D2C7C7E6D0079B7D1 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60807F9C2C7C7E6D0079B7D1 /* Environment.swift */; };
+		60807F9F2C7C7E890079B7D1 /* Plist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60807F9E2C7C7E890079B7D1 /* Plist.swift */; };
+		60807FAA2C7C80950079B7D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60807FA82C7C80940079B7D1 /* AppDelegate.swift */; };
+		60807FAB2C7C80950079B7D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60807FA92C7C80940079B7D1 /* SceneDelegate.swift */; };
+		60807FB42C7C81420079B7D1 /* ChaptersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60807FB32C7C81420079B7D1 /* ChaptersModel.swift */; };
+		60807FB62C7C815C0079B7D1 /* ChaptersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60807FB52C7C815C0079B7D1 /* ChaptersViewController.swift */; };
+		60807FB82C7C816C0079B7D1 /* ChaptersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60807FB72C7C816C0079B7D1 /* ChaptersViewModel.swift */; };
+		60807FBA2C7C8B100079B7D1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60807FB92C7C8B100079B7D1 /* NetworkManager.swift */; };
+		60807FBC2C7C8FA70079B7D1 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60807FBB2C7C8FA70079B7D1 /* HTTPMethod.swift */; };
+		608482192C7CDDAB00E3E1FA /* StaticStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608482182C7CDDAB00E3E1FA /* StaticStrings.swift */; };
+		6084821D2C7CE2AA00E3E1FA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6084821C2C7CE2AA00E3E1FA /* HomeViewController.swift */; };
+		6084821F2C7CE59300E3E1FA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6084821E2C7CE59300E3E1FA /* UIColor.swift */; };
+		608D54B32C7E1081000330A0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608D54B22C7E1081000330A0 /* Colors.swift */; };
+		60C314EB2C7C96F700A7E8D1 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C314EA2C7C96F700A7E8D1 /* Loader.swift */; };
+		60C314EE2C7C99F500A7E8D1 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C314ED2C7C99F500A7E8D1 /* DataSource.swift */; };
+		60C314F32C7CA13C00A7E8D1 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C314F22C7CA13C00A7E8D1 /* TabBarViewController.swift */; };
+		60C314F52C7CA2A600A7E8D1 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C314F42C7CA2A600A7E8D1 /* UIImage.swift */; };
+		60C89E792C7E207900455CF7 /* SceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C89E782C7E207900455CF7 /* SceneViewController.swift */; };
+		60C89E7B2C7E28F300455CF7 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C89E7A2C7E28F300455CF7 /* UIViewController.swift */; };
+		60C89E802C7E4AEC00455CF7 /* ChaptersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C89E7E2C7E4AEC00455CF7 /* ChaptersTableViewCell.swift */; };
+		60C89E812C7E4AEC00455CF7 /* ChaptersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60C89E7F2C7E4AEC00455CF7 /* ChaptersTableViewCell.xib */; };
+		60C89E852C7E560700455CF7 /* ChapterSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C89E842C7E560700455CF7 /* ChapterSummaryViewController.swift */; };
+		60C89E872C7E5CF700455CF7 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C89E862C7E5CF700455CF7 /* UILabel.swift */; };
+		60C89E8A2C7EB4DD00455CF7 /* LoaderHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C89E892C7EB4DD00455CF7 /* LoaderHandling.swift */; };
+		83958E179B57006A9655463C /* Pods_BhagavadGitaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F5BC422E6D07E8EF3869CA /* Pods_BhagavadGitaTests.framework */; };
+		E1794517838E19096CB0B2F8 /* Pods_BhagavadGita.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89D14B7099CFE5AE5E8AAB3 /* Pods_BhagavadGita.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		60807F7B2C7C6F800079B7D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60807F592C7C6F7B0079B7D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60807F602C7C6F7B0079B7D1;
+			remoteInfo = BhagavadGita;
+		};
+		60807F852C7C6F800079B7D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60807F592C7C6F7B0079B7D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60807F602C7C6F7B0079B7D1;
+			remoteInfo = BhagavadGita;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05192FFA1A054C3196B0E4B5 /* Pods-BhagavadGita.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BhagavadGita.debug.xcconfig"; path = "Target Support Files/Pods-BhagavadGita/Pods-BhagavadGita.debug.xcconfig"; sourceTree = "<group>"; };
+		06E31435FCB062F8B7F4C7EF /* Pods-BhagavadGitaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BhagavadGitaTests.debug.xcconfig"; path = "Target Support Files/Pods-BhagavadGitaTests/Pods-BhagavadGitaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0AA5E26E9BB1A890E49C04C9 /* Pods-BhagavadGita-BhagavadGitaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BhagavadGita-BhagavadGitaUITests.release.xcconfig"; path = "Target Support Files/Pods-BhagavadGita-BhagavadGitaUITests/Pods-BhagavadGita-BhagavadGitaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5DF7CB444F2FAC7DCE854709 /* Pods-BhagavadGita-BhagavadGitaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BhagavadGita-BhagavadGitaUITests.debug.xcconfig"; path = "Target Support Files/Pods-BhagavadGita-BhagavadGitaUITests/Pods-BhagavadGita-BhagavadGitaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		605A96472C7CB2AD007DA31A /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
+		60807F612C7C6F7B0079B7D1 /* BhagavadGita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BhagavadGita.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		60807F6B2C7C6F7B0079B7D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		60807F6E2C7C6F7B0079B7D1 /* BhagavadGita.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BhagavadGita.xcdatamodel; sourceTree = "<group>"; };
+		60807F702C7C6F7F0079B7D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		60807F732C7C6F7F0079B7D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		60807F752C7C6F7F0079B7D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60807F7A2C7C6F800079B7D1 /* BhagavadGitaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BhagavadGitaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60807F7E2C7C6F800079B7D1 /* BhagavadGitaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BhagavadGitaTests.swift; sourceTree = "<group>"; };
+		60807F842C7C6F800079B7D1 /* BhagavadGitaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BhagavadGitaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60807F882C7C6F800079B7D1 /* BhagavadGitaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BhagavadGitaUITests.swift; sourceTree = "<group>"; };
+		60807F8A2C7C6F800079B7D1 /* BhagavadGitaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BhagavadGitaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		60807F972C7C7CC40079B7D1 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		60807F9A2C7C7E4A0079B7D1 /* APIWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIWrapper.swift; sourceTree = "<group>"; };
+		60807F9C2C7C7E6D0079B7D1 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		60807F9E2C7C7E890079B7D1 /* Plist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plist.swift; sourceTree = "<group>"; };
+		60807FA82C7C80940079B7D1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		60807FA92C7C80940079B7D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		60807FB32C7C81420079B7D1 /* ChaptersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaptersModel.swift; sourceTree = "<group>"; };
+		60807FB52C7C815C0079B7D1 /* ChaptersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaptersViewController.swift; sourceTree = "<group>"; };
+		60807FB72C7C816C0079B7D1 /* ChaptersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaptersViewModel.swift; sourceTree = "<group>"; };
+		60807FB92C7C8B100079B7D1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		60807FBB2C7C8FA70079B7D1 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		608482182C7CDDAB00E3E1FA /* StaticStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticStrings.swift; sourceTree = "<group>"; };
+		6084821C2C7CE2AA00E3E1FA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6084821E2C7CE59300E3E1FA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		608D54B22C7E1081000330A0 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		60C314EA2C7C96F700A7E8D1 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		60C314ED2C7C99F500A7E8D1 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		60C314F22C7CA13C00A7E8D1 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		60C314F42C7CA2A600A7E8D1 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		60C89E782C7E207900455CF7 /* SceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneViewController.swift; sourceTree = "<group>"; };
+		60C89E7A2C7E28F300455CF7 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		60C89E7E2C7E4AEC00455CF7 /* ChaptersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaptersTableViewCell.swift; sourceTree = "<group>"; };
+		60C89E7F2C7E4AEC00455CF7 /* ChaptersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChaptersTableViewCell.xib; sourceTree = "<group>"; };
+		60C89E842C7E560700455CF7 /* ChapterSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterSummaryViewController.swift; sourceTree = "<group>"; };
+		60C89E862C7E5CF700455CF7 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		60C89E892C7EB4DD00455CF7 /* LoaderHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderHandling.swift; sourceTree = "<group>"; };
+		6D9BDCDC3BDB1FE0F753BE12 /* Pods_BhagavadGita_BhagavadGitaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BhagavadGita_BhagavadGitaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8749E7F06E24E680DE23AB2C /* Pods-BhagavadGita.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BhagavadGita.release.xcconfig"; path = "Target Support Files/Pods-BhagavadGita/Pods-BhagavadGita.release.xcconfig"; sourceTree = "<group>"; };
+		B412EB4318A2EFBEC4FF9727 /* Pods-BhagavadGitaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BhagavadGitaTests.release.xcconfig"; path = "Target Support Files/Pods-BhagavadGitaTests/Pods-BhagavadGitaTests.release.xcconfig"; sourceTree = "<group>"; };
+		D89D14B7099CFE5AE5E8AAB3 /* Pods_BhagavadGita.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BhagavadGita.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4F5BC422E6D07E8EF3869CA /* Pods_BhagavadGitaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BhagavadGitaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60807F5E2C7C6F7B0079B7D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1794517838E19096CB0B2F8 /* Pods_BhagavadGita.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60807F772C7C6F800079B7D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83958E179B57006A9655463C /* Pods_BhagavadGitaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60807F812C7C6F800079B7D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				365BA2259DC49FA978A0D95A /* Pods_BhagavadGita_BhagavadGitaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45BFFB1BEE7005D18D1699A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05192FFA1A054C3196B0E4B5 /* Pods-BhagavadGita.debug.xcconfig */,
+				8749E7F06E24E680DE23AB2C /* Pods-BhagavadGita.release.xcconfig */,
+				5DF7CB444F2FAC7DCE854709 /* Pods-BhagavadGita-BhagavadGitaUITests.debug.xcconfig */,
+				0AA5E26E9BB1A890E49C04C9 /* Pods-BhagavadGita-BhagavadGitaUITests.release.xcconfig */,
+				06E31435FCB062F8B7F4C7EF /* Pods-BhagavadGitaTests.debug.xcconfig */,
+				B412EB4318A2EFBEC4FF9727 /* Pods-BhagavadGitaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		605A96462C7CB28B007DA31A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				605A96472C7CB2AD007DA31A /* UIStoryboard.swift */,
+				6084821E2C7CE59300E3E1FA /* UIColor.swift */,
+				60C89E7A2C7E28F300455CF7 /* UIViewController.swift */,
+				60C89E862C7E5CF700455CF7 /* UILabel.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		60807F582C7C6F7B0079B7D1 = {
+			isa = PBXGroup;
+			children = (
+				60807F632C7C6F7B0079B7D1 /* BhagavadGita */,
+				60807F7D2C7C6F800079B7D1 /* BhagavadGitaTests */,
+				60807F872C7C6F800079B7D1 /* BhagavadGitaUITests */,
+				60807F622C7C6F7B0079B7D1 /* Products */,
+				45BFFB1BEE7005D18D1699A6 /* Pods */,
+				E37764051896936DAC27BA55 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		60807F622C7C6F7B0079B7D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60807F612C7C6F7B0079B7D1 /* BhagavadGita.app */,
+				60807F7A2C7C6F800079B7D1 /* BhagavadGitaTests.xctest */,
+				60807F842C7C6F800079B7D1 /* BhagavadGitaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60807F632C7C6F7B0079B7D1 /* BhagavadGita */ = {
+			isa = PBXGroup;
+			children = (
+				60807FAC2C7C80BB0079B7D1 /* App */,
+				60C89E8B2C7EBBCC00455CF7 /* Assets */,
+				60807FA72C7C807C0079B7D1 /* Common */,
+				60807F982C7C7DA30079B7D1 /* Configurations */,
+				60C314EC2C7C99CA00A7E8D1 /* DataSource */,
+				605A96462C7CB28B007DA31A /* Extensions */,
+				60807FA02C7C7F890079B7D1 /* NetworkManager */,
+				60807F992C7C7E2F0079B7D1 /* Resources */,
+				60807FA12C7C7FA40079B7D1 /* Storyboards */,
+				60C314F12C7CA11F00A7E8D1 /* TabBar */,
+				60807F752C7C6F7F0079B7D1 /* Info.plist */,
+				60807F6D2C7C6F7B0079B7D1 /* BhagavadGita.xcdatamodeld */,
+			);
+			path = BhagavadGita;
+			sourceTree = "<group>";
+		};
+		60807F7D2C7C6F800079B7D1 /* BhagavadGitaTests */ = {
+			isa = PBXGroup;
+			children = (
+				60807F7E2C7C6F800079B7D1 /* BhagavadGitaTests.swift */,
+			);
+			path = BhagavadGitaTests;
+			sourceTree = "<group>";
+		};
+		60807F872C7C6F800079B7D1 /* BhagavadGitaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				60807F882C7C6F800079B7D1 /* BhagavadGitaUITests.swift */,
+				60807F8A2C7C6F800079B7D1 /* BhagavadGitaUITestsLaunchTests.swift */,
+			);
+			path = BhagavadGitaUITests;
+			sourceTree = "<group>";
+		};
+		60807F982C7C7DA30079B7D1 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				60807F972C7C7CC40079B7D1 /* Config.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		60807F992C7C7E2F0079B7D1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				60807F9A2C7C7E4A0079B7D1 /* APIWrapper.swift */,
+				60807F9C2C7C7E6D0079B7D1 /* Environment.swift */,
+				60807F9E2C7C7E890079B7D1 /* Plist.swift */,
+				60807FBB2C7C8FA70079B7D1 /* HTTPMethod.swift */,
+				60C314F42C7CA2A600A7E8D1 /* UIImage.swift */,
+				608482182C7CDDAB00E3E1FA /* StaticStrings.swift */,
+				608D54B22C7E1081000330A0 /* Colors.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		60807FA02C7C7F890079B7D1 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				60807FB92C7C8B100079B7D1 /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		60807FA12C7C7FA40079B7D1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				60807F6A2C7C6F7B0079B7D1 /* Main.storyboard */,
+				60807F722C7C6F7F0079B7D1 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		60807FA72C7C807C0079B7D1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				60C89E882C7EB4C600455CF7 /* Protocols */,
+				60807FA82C7C80940079B7D1 /* AppDelegate.swift */,
+				60807FA92C7C80940079B7D1 /* SceneDelegate.swift */,
+				60C314EA2C7C96F700A7E8D1 /* Loader.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		60807FAC2C7C80BB0079B7D1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				60C89E7C2C7E4AC600455CF7 /* CustomCells */,
+				60807FAD2C7C80CB0079B7D1 /* Chapters */,
+				60C89E822C7E55E000455CF7 /* ChapterSummary */,
+				6084821A2C7CE28D00E3E1FA /* Home */,
+				60C89E762C7E204D00455CF7 /* Scene */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		60807FAD2C7C80CB0079B7D1 /* Chapters */ = {
+			isa = PBXGroup;
+			children = (
+				60807FB12C7C810F0079B7D1 /* Model */,
+				60807FB02C7C80FE0079B7D1 /* View */,
+				60807FB22C7C81160079B7D1 /* ViewModel */,
+			);
+			path = Chapters;
+			sourceTree = "<group>";
+		};
+		60807FB02C7C80FE0079B7D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				60807FB52C7C815C0079B7D1 /* ChaptersViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		60807FB12C7C810F0079B7D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				60807FB32C7C81420079B7D1 /* ChaptersModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		60807FB22C7C81160079B7D1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				60807FB72C7C816C0079B7D1 /* ChaptersViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6084821A2C7CE28D00E3E1FA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6084821B2C7CE29900E3E1FA /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6084821B2C7CE29900E3E1FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6084821C2C7CE2AA00E3E1FA /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		60C314EC2C7C99CA00A7E8D1 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				60C314ED2C7C99F500A7E8D1 /* DataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		60C314F12C7CA11F00A7E8D1 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				60C314F22C7CA13C00A7E8D1 /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		60C89E762C7E204D00455CF7 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				60C89E772C7E205C00455CF7 /* View */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		60C89E772C7E205C00455CF7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				60C89E782C7E207900455CF7 /* SceneViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		60C89E7C2C7E4AC600455CF7 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				60C89E7D2C7E4AD000455CF7 /* Chapters */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		60C89E7D2C7E4AD000455CF7 /* Chapters */ = {
+			isa = PBXGroup;
+			children = (
+				60C89E7E2C7E4AEC00455CF7 /* ChaptersTableViewCell.swift */,
+				60C89E7F2C7E4AEC00455CF7 /* ChaptersTableViewCell.xib */,
+			);
+			path = Chapters;
+			sourceTree = "<group>";
+		};
+		60C89E822C7E55E000455CF7 /* ChapterSummary */ = {
+			isa = PBXGroup;
+			children = (
+				60C89E832C7E55ED00455CF7 /* View */,
+			);
+			path = ChapterSummary;
+			sourceTree = "<group>";
+		};
+		60C89E832C7E55ED00455CF7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				60C89E842C7E560700455CF7 /* ChapterSummaryViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		60C89E882C7EB4C600455CF7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				60C89E892C7EB4DD00455CF7 /* LoaderHandling.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		60C89E8B2C7EBBCC00455CF7 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				60807F702C7C6F7F0079B7D1 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		E37764051896936DAC27BA55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D89D14B7099CFE5AE5E8AAB3 /* Pods_BhagavadGita.framework */,
+				6D9BDCDC3BDB1FE0F753BE12 /* Pods_BhagavadGita_BhagavadGitaUITests.framework */,
+				E4F5BC422E6D07E8EF3869CA /* Pods_BhagavadGitaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		60807F602C7C6F7B0079B7D1 /* BhagavadGita */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60807F8E2C7C6F800079B7D1 /* Build configuration list for PBXNativeTarget "BhagavadGita" */;
+			buildPhases = (
+				11E1BC48A8D254BD89ADEF76 /* [CP] Check Pods Manifest.lock */,
+				60807F5D2C7C6F7B0079B7D1 /* Sources */,
+				60807F5E2C7C6F7B0079B7D1 /* Frameworks */,
+				60807F5F2C7C6F7B0079B7D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BhagavadGita;
+			productName = BhagavadGita;
+			productReference = 60807F612C7C6F7B0079B7D1 /* BhagavadGita.app */;
+			productType = "com.apple.product-type.application";
+		};
+		60807F792C7C6F800079B7D1 /* BhagavadGitaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60807F912C7C6F800079B7D1 /* Build configuration list for PBXNativeTarget "BhagavadGitaTests" */;
+			buildPhases = (
+				E771595FC3F3C27A4880312A /* [CP] Check Pods Manifest.lock */,
+				60807F762C7C6F800079B7D1 /* Sources */,
+				60807F772C7C6F800079B7D1 /* Frameworks */,
+				60807F782C7C6F800079B7D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60807F7C2C7C6F800079B7D1 /* PBXTargetDependency */,
+			);
+			name = BhagavadGitaTests;
+			productName = BhagavadGitaTests;
+			productReference = 60807F7A2C7C6F800079B7D1 /* BhagavadGitaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		60807F832C7C6F800079B7D1 /* BhagavadGitaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60807F942C7C6F800079B7D1 /* Build configuration list for PBXNativeTarget "BhagavadGitaUITests" */;
+			buildPhases = (
+				DD056190682FEB1BA899BEEF /* [CP] Check Pods Manifest.lock */,
+				60807F802C7C6F800079B7D1 /* Sources */,
+				60807F812C7C6F800079B7D1 /* Frameworks */,
+				60807F822C7C6F800079B7D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60807F862C7C6F800079B7D1 /* PBXTargetDependency */,
+			);
+			name = BhagavadGitaUITests;
+			productName = BhagavadGitaUITests;
+			productReference = 60807F842C7C6F800079B7D1 /* BhagavadGitaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60807F592C7C6F7B0079B7D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					60807F602C7C6F7B0079B7D1 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					60807F792C7C6F800079B7D1 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 60807F602C7C6F7B0079B7D1;
+					};
+					60807F832C7C6F800079B7D1 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 60807F602C7C6F7B0079B7D1;
+					};
+				};
+			};
+			buildConfigurationList = 60807F5C2C7C6F7B0079B7D1 /* Build configuration list for PBXProject "BhagavadGita" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 60807F582C7C6F7B0079B7D1;
+			productRefGroup = 60807F622C7C6F7B0079B7D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60807F602C7C6F7B0079B7D1 /* BhagavadGita */,
+				60807F792C7C6F800079B7D1 /* BhagavadGitaTests */,
+				60807F832C7C6F800079B7D1 /* BhagavadGitaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		60807F5F2C7C6F7B0079B7D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60807F742C7C6F7F0079B7D1 /* LaunchScreen.storyboard in Resources */,
+				60807F712C7C6F7F0079B7D1 /* Assets.xcassets in Resources */,
+				60807F6C2C7C6F7B0079B7D1 /* Main.storyboard in Resources */,
+				60C89E812C7E4AEC00455CF7 /* ChaptersTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60807F782C7C6F800079B7D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60807F822C7C6F800079B7D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11E1BC48A8D254BD89ADEF76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BhagavadGita-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD056190682FEB1BA899BEEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BhagavadGita-BhagavadGitaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E771595FC3F3C27A4880312A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BhagavadGitaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60807F5D2C7C6F7B0079B7D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60807FB62C7C815C0079B7D1 /* ChaptersViewController.swift in Sources */,
+				608D54B32C7E1081000330A0 /* Colors.swift in Sources */,
+				6084821F2C7CE59300E3E1FA /* UIColor.swift in Sources */,
+				60807FB42C7C81420079B7D1 /* ChaptersModel.swift in Sources */,
+				60C314EB2C7C96F700A7E8D1 /* Loader.swift in Sources */,
+				60C314EE2C7C99F500A7E8D1 /* DataSource.swift in Sources */,
+				60807FBA2C7C8B100079B7D1 /* NetworkManager.swift in Sources */,
+				605A96482C7CB2AD007DA31A /* UIStoryboard.swift in Sources */,
+				60807FAA2C7C80950079B7D1 /* AppDelegate.swift in Sources */,
+				60807FB82C7C816C0079B7D1 /* ChaptersViewModel.swift in Sources */,
+				60C89E852C7E560700455CF7 /* ChapterSummaryViewController.swift in Sources */,
+				60807FAB2C7C80950079B7D1 /* SceneDelegate.swift in Sources */,
+				60C314F52C7CA2A600A7E8D1 /* UIImage.swift in Sources */,
+				60C89E872C7E5CF700455CF7 /* UILabel.swift in Sources */,
+				60C89E7B2C7E28F300455CF7 /* UIViewController.swift in Sources */,
+				60C89E8A2C7EB4DD00455CF7 /* LoaderHandling.swift in Sources */,
+				60807F6F2C7C6F7B0079B7D1 /* BhagavadGita.xcdatamodeld in Sources */,
+				60807F9D2C7C7E6D0079B7D1 /* Environment.swift in Sources */,
+				60C89E802C7E4AEC00455CF7 /* ChaptersTableViewCell.swift in Sources */,
+				60807F9B2C7C7E4A0079B7D1 /* APIWrapper.swift in Sources */,
+				6084821D2C7CE2AA00E3E1FA /* HomeViewController.swift in Sources */,
+				60C89E792C7E207900455CF7 /* SceneViewController.swift in Sources */,
+				60807F9F2C7C7E890079B7D1 /* Plist.swift in Sources */,
+				60C314F32C7CA13C00A7E8D1 /* TabBarViewController.swift in Sources */,
+				608482192C7CDDAB00E3E1FA /* StaticStrings.swift in Sources */,
+				60807FBC2C7C8FA70079B7D1 /* HTTPMethod.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60807F762C7C6F800079B7D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60807F7F2C7C6F800079B7D1 /* BhagavadGitaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60807F802C7C6F800079B7D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60807F892C7C6F800079B7D1 /* BhagavadGitaUITests.swift in Sources */,
+				60807F8B2C7C6F800079B7D1 /* BhagavadGitaUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		60807F7C2C7C6F800079B7D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60807F602C7C6F7B0079B7D1 /* BhagavadGita */;
+			targetProxy = 60807F7B2C7C6F800079B7D1 /* PBXContainerItemProxy */;
+		};
+		60807F862C7C6F800079B7D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60807F602C7C6F7B0079B7D1 /* BhagavadGita */;
+			targetProxy = 60807F852C7C6F800079B7D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		60807F6A2C7C6F7B0079B7D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60807F6B2C7C6F7B0079B7D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		60807F722C7C6F7F0079B7D1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60807F732C7C6F7F0079B7D1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		60807F8C2C7C6F800079B7D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60807F972C7C7CC40079B7D1 /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		60807F8D2C7C6F800079B7D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60807F972C7C7CC40079B7D1 /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		60807F8F2C7C6F800079B7D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05192FFA1A054C3196B0E4B5 /* Pods-BhagavadGita.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZUN8QDCHP6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BhagavadGita/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BhagavadGita;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		60807F902C7C6F800079B7D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8749E7F06E24E680DE23AB2C /* Pods-BhagavadGita.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZUN8QDCHP6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BhagavadGita/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BhagavadGita;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		60807F922C7C6F800079B7D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06E31435FCB062F8B7F4C7EF /* Pods-BhagavadGitaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZUN8QDCHP6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BhagavadGitaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BhagavadGita.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BhagavadGita";
+			};
+			name = Debug;
+		};
+		60807F932C7C6F800079B7D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B412EB4318A2EFBEC4FF9727 /* Pods-BhagavadGitaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZUN8QDCHP6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BhagavadGitaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BhagavadGita.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BhagavadGita";
+			};
+			name = Release;
+		};
+		60807F952C7C6F800079B7D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DF7CB444F2FAC7DCE854709 /* Pods-BhagavadGita-BhagavadGitaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZUN8QDCHP6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BhagavadGitaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BhagavadGita;
+			};
+			name = Debug;
+		};
+		60807F962C7C6F800079B7D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AA5E26E9BB1A890E49C04C9 /* Pods-BhagavadGita-BhagavadGitaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZUN8QDCHP6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BhagavadGitaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BhagavadGita;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60807F5C2C7C6F7B0079B7D1 /* Build configuration list for PBXProject "BhagavadGita" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60807F8C2C7C6F800079B7D1 /* Debug */,
+				60807F8D2C7C6F800079B7D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60807F8E2C7C6F800079B7D1 /* Build configuration list for PBXNativeTarget "BhagavadGita" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60807F8F2C7C6F800079B7D1 /* Debug */,
+				60807F902C7C6F800079B7D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60807F912C7C6F800079B7D1 /* Build configuration list for PBXNativeTarget "BhagavadGitaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60807F922C7C6F800079B7D1 /* Debug */,
+				60807F932C7C6F800079B7D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60807F942C7C6F800079B7D1 /* Build configuration list for PBXNativeTarget "BhagavadGitaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60807F952C7C6F800079B7D1 /* Debug */,
+				60807F962C7C6F800079B7D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		60807F6D2C7C6F7B0079B7D1 /* BhagavadGita.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				60807F6E2C7C6F7B0079B7D1 /* BhagavadGita.xcdatamodel */,
+			);
+			currentVersion = 60807F6E2C7C6F7B0079B7D1 /* BhagavadGita.xcdatamodel */;
+			path = BhagavadGita.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 60807F592C7C6F7B0079B7D1 /* Project object */;
+}
